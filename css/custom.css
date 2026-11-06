@@ -1,0 +1,246 @@
+/* INFO1005 Website Design — Module 2.3 completed Bart Simpson example */
+
+:root {
+  --brand-primary: #f12424;
+  --brand-secondary: #0acf48;
+  --brand-dark: #282828;
+  --brand-light: #ec3413;
+  --brand-panel: #24f44e;
+  --brand-muted: #666666;
+  --brand-border: #83a7f4;
+  --heading-font: "Aguafina Script", cursive;
+  --body-font: "IBM Plex Serif", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  color: var(--brand-primary);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: .95;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: var(--brand-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: var(--brand-dark);
+  font-size: 1.35rem;
+}
+
+h4 {
+  color: var(--brand-muted);
+  font-size: .95rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.navbar {
+  background-color: var(--brand-dark);
+  border-bottom: 4px solid var(--brand-primary);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link.active,
+.navbar-brand:hover {
+  color: var(--brand-secondary);
+}
+
+.navbar-toggler {
+  background-color: var(--brand-secondary);
+}
+
+.brand-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: .5rem;
+  border: 3px solid var(--brand-secondary);
+}
+
+.hero {
+  background-image:
+    linear-gradient(rgba(255,248,231,.7), rgba(255,248,231,.7)),
+    url(../img/my-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+}
+
+.eyebrow {
+  color: var(--brand-primary);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.lead-intro {
+  font-size: 1.2rem;
+  max-width: 46rem;
+}
+
+.hero-portrait,
+.profile-img {
+  border: 8px solid var(--brand-secondary);
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.16);
+}
+
+.site-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-panel {
+  background-color: var(--brand-panel);
+  border: 2px solid var(--brand-border);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item {
+  border-left: 6px solid var(--brand-primary);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress {
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.progress-bar {
+  font-weight: 700;
+}
+
+.visual { background-color: var(--brand-primary); }
+.story { background-color: #6f42c1; }
+.audience { background-color: #198754; }
+
+.carousel-img {
+  height: 360px;
+  object-fit: cover;
+  filter: brightness(.75);
+}
+
+.carousel-caption {
+  background-color: rgba(40,40,40,.72);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #ffffff;
+}
+
+.portfolio-card {
+  border: 2px solid var(--brand-border);
+  overflow: hidden;
+}
+
+.portfolio-card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.custom-btn,
+.custom-btn-secondary {
+  border: 2px solid var(--brand-primary);
+  font-weight: 700;
+}
+
+.custom-btn {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+}
+
+.custom-btn-secondary {
+  background-color: #ffffff;
+  color: var(--brand-primary);
+}
+
+.custom-btn:hover,
+.custom-btn-secondary:hover {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+  color: #ffffff;
+}
+
+.accordion-button {
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--brand-secondary);
+  color: var(--brand-dark);
+}
+
+.site-footer {
+  background-color: var(--brand-dark);
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-portrait {
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .carousel-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .content-panel {
+    padding: 1rem;
+  }
+
+  .carousel-caption {
+    position: static;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- INFO1005 Website Design — Module 2.3 completed Bart Simpson example -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CONSTRUCTION MANAGEMENT STUDENT | ASPIRING BUILDER">
+  <meta name="author" content="INFO1005 Website Design">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS comes AFTER Bootstrap -->
+  <link href="css/custom.css" rel="stylesheet">
+
+    <title>Tylar | Construction Portfolio</title>
+</head>
+
+<body>
+
+  <!-- MODULE 2.2 REVIEW — already complete -->
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        <img class="brand-img" src="img/crane-logo.png" alt="Bart Simpson icon"> Tylar xuereb
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNavbar"
+        aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="portfolioNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evidence">Evidence</a></li>
+          <li class="nav-item"><a class="nav-link" href="pdf/Tylar_Xuereb_Sample_Resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow">CONSTRUCTION MANAGEMENT STUDENT | ASPIRING BUILDER</p>
+          <h1>Tylar</h1>
+          <p class="lead-intro">I'm a construction management student with a strong interest in residential building and
+            property development. I'm passionate about learning the building industry and working towards becoming a
+            licensed builder.</p>
+          <a class="btn custom-btn" href="pdf/Tylar_Xuereb_Sample_Resume.pdf" target="_blank">Open resume PDF</a>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <img class="img-fluid hero-portrait m-4" src="img/my-image8.jpeg" alt="My construction photo">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container site-content">
+    <div class="row g-4">
+
+      <aside class="col-12 col-lg-4">
+        <section id="about" class="content-panel">
+          <h2>About Me</h2>
+          <p>I'm a hardworking and reliable person who is always willing to learn new things.
+            I enjoy working with others and I'm keen to gain more experience..</p>
+        </section>
+
+        <section id="skills" class="content-panel">
+          <h2>Skills</h2>
+
+          <div class="skill-item">
+            <p>communication</p>
+            <div class="progress" role="progressbar" aria-label="Visual research skill" aria-valuenow="88"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar visual" style="width: 88%">94%</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>reliable</p>
+            <div class="progress" role="progressbar" aria-label="Storyboarding skill" aria-valuenow="76"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar story" style="width: 76%">88</div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <p>Athletic</p>
+            <div class="progress" role="progressbar" aria-label="Audience engagement skill" aria-valuenow="94"
+              aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar audience" style="width: 94%">100%</div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <div class="col-12 col-lg-8">
+
+        <section id="experience" class="content-panel">
+          <h2>Education and Experience</h2>
+          <div class="timeline-item">
+            <h3>Diploma of Creative Industries</h3>
+            <h4>Western Sydney University The College</h4>
+            <p>Studying web design, visual media, creative practice and professional portfolio development.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>junior builder</h3>
+            <h4>nucon projects</h4>
+            <p>Assisted with daily building tasks, including preparing materials, keeping the site clean, and helping
+              tradespeople with construction work.</p>
+          </div>
+        </section>
+
+
+        <section id="projects" class="content-panel">
+          <h2>Project Highlights</h2>
+          <p></p>
+
+          <div id="projectCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="img/my-background.jpeg" class="d-block w-100 carousel-img" alt="My background">
+                <div class="carousel-caption">
+                  <h3>moorebank project</h3>
+                  <p>A beautifully designed duplex featuring curved balconies, modern finishes and a clean, elegant
+                    exterior.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/my-image3.jpeg" class="d-block w-100 carousel-img"
+                  alt="Itchy and Scratchy visual reference">
+                <div class="carousel-caption">
+                  <h3>concord project</h3>
+                  <p>A stunning modern home featuring large glass windows, curved architecture and luxury finishes.
+
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="img/my-image4.jpeg" class="d-block w-100 carousel-img"
+                  alt="Krusty the Clown visual reference">
+                <div class="carousel-caption">
+                  <h3>merrylands project</h3>
+                  <p>A modern double-storey home featuring stylish brickwork, spacious balconies and a sleek
+                    architectural design.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+
+
+        <section id="portfolio" class="content-panel">
+          <h2>Projects</h2>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/my-image5.jpeg" class="card-img-top" alt="rosebery project">
+                <div class="card-body">
+                  <h3 class="card-title">residential construction</h3>
+                  <p class="card-text">Residential Construction Experience assisting with building tasks and working
+                    alongside tradespeople.</p>
+                  <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#projectModal">Read project brief</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/my-image6.jpeg" class="card-img-top" alt="Television fan poster visual">
+                <div class="card-body">
+                  <h3 class="card-title">construction management</h3>
+                  <p class="card-text"> Learning how residential projects are planned, organised and completed.</p>
+                  <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#projectModal">Read project brief</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 portfolio-card">
+                <img src="img/my-image7.jpeg" class="card-img-top" alt="Krusty campaign visual">
+                <div class="card-body">
+                  <h3 class="card-title">my future goals</h3>
+                  <p class="card-text"> – Working towards becoming a licensed builder and eventually starting my own
+                    construction business.</p>
+                  <button type="button" class="btn custom-btn-secondary" data-bs-toggle="modal"
+                    data-bs-target="#projectModal">Read project brief</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="evidence" class="content-panel">
+          <h2>contact detials</h2>
+        
+          <div class="accordion" id="evidenceAccordion">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <img src="img/my-image10.jpeg" width="90">
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  <a href="https://www.instagram.com/" target="_blank">@tylar.builds_demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <img src="img/my-image11.jpeg" width="75">
+                </button>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                  <div class="accordion-body">
+                    <p><a href="tel:+61491570156">0491 570 156</a></p>
+
+                  </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <img src="img/my-image12.jpeg" width="120">
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#evidenceAccordion">
+                <div class="accordion-body">
+                  <a href="mailto:tylar.builds@gmail.com" target="_blank">tylar.builds@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- STEP 3 CONTINUED — MODAL -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="projectModalLabel">Project brief</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Use this space for a short project brief, client summary, role description or reflection.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p></p>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript powers navbar, carousel, modal and accordion. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
